@@ -1,0 +1,19 @@
+i=input("")
+i=i.replace("[","")
+i=i.replace("]","")
+#i.split(",")
+i=i.split(",")
+output=[]
+
+for x in range(len(i)):
+  i[x]=int(i[x])
+
+for x in range(len(i)):
+  if i[x]>=0:
+    output.append(i[x])
+
+for x in range(len(output)):
+  output[x]=str(output[x])
+
+show=",".join(output)
+print(show)
