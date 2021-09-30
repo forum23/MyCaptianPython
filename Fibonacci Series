@@ -1,0 +1,16 @@
+max=int(input(""))
+f=[]
+a,b=0,1
+c=0
+
+while (a-1<max):
+ f.append(a)
+ c=a+b
+ a=b
+ b=c
+
+for x in range(len(f)):
+  f[x]=str(f[x])
+
+output=",".join(f)
+print(output)
